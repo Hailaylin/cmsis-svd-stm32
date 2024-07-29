@@ -14,8 +14,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Git
         run: |
-          git config --global user.email "bot@modm.io"
-          git config --global user.name "modm update bot"
+          git config --global user.email "bot@hailay.site"
+          git config --global user.name "stm32 update bot"
 
       - name: Run update.py script
         run: |
@@ -31,5 +31,5 @@ jobs:
         if: always()
         uses: gautamkrishnar/keepalive-workflow@v1
         with:
-          committer_username: modm update bot
-          committer_email: bot@modm.io
+          committer_username: stm32 update bot
+          committer_email: bot@hailay.site
